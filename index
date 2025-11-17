@@ -2,6 +2,7 @@
 <html>
 	<head>
 		<title>Main Dashboard</title>
+		<p>This is a test</p>
 	</head>
 	<body>
       <h1>test</h1>
