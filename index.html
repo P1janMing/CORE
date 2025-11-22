@@ -2,9 +2,59 @@
 <html>
 	<head>
 		<title>Main Dashboard</title>
-		<p>This is a test</p>
+		<link rel="stylesheet" type="text/css" href="css/styles.css">
+		<!-- Bootstrap CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 	</head>
 	<body>
-      <h1>test</h1>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Notifications Section -->
+		<div class="card m-5" id="NotificationsCard">
+			<div class="card-body">
+				<h6>Notifications/Updates Regarding Assigned Cases</h6>
+				<p class="notifsText">Referral ID: ###### | User: Full name | Time: mm/dd/yyyy</p>
+				<p class="notifsText">Referral ID: ###### | User: Full name | Time: mm/dd/yyyy</p>
+			</div>
+		</div>
+
+		<div class="card m-5" id="NotificationsCard">
+			<div class="card-body">
+				<div class="carousel-container">
+					<div id="taskList" class="carousel slide">
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#taskList" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+							<button type="button" data-bs-target="#taskList" data-bs-slide-to="1" aria-label="Slide 2"></button>
+							<button type="button" data-bs-target="#taskList" data-bs-slide-to="2" aria-label="Slide 3"></button>
+						</div>
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<h6>Task List</h6>
+								<p>Referral ID: ###### | Deadline: mm/dd/yyyy</p>
+								<p>Task description: Description of task, in bullets or paragraphs based on notes from previous AOC. Anything miscellaneous can also go here.</p>
+								<p>AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
+							</div>
+							<div class="carousel-item">
+								<h6>Task List</h6>
+								<p>Referral ID: ###### | Deadline: mm/dd/yyyy</p>
+							</div>
+							<div class="carousel-item">
+								<h6>Task List</h6>
+								<p>Referral ID: ###### | Deadline: mm/dd/yyyy</p>
+							</div>
+							</div>
+						</div>
+						<button class="carousel-control-prev" type="button" data-bs-target="#taskList" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button class="carousel-control-next" type="button" data-bs-target="#taskList" data-bs-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
   	</body>
 </html>
