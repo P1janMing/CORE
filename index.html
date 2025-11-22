@@ -46,19 +46,145 @@
 								<p>Task description: Description of task, in bullets or paragraphs based on notes from previous AOC. Anything miscellaneous can also go here.</p>
 								<p>AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
 							</div>
-							</div>
 						</div>
-						<button class="carousel-control-prev" type="button" data-bs-target="#taskList" data-bs-slide="prev">
+
+						<!-- Carousel Controls -->
+						<button class="carousel-control-prev arrow-outside" type="button" data-bs-target="#taskList" data-bs-slide="prev">
 							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Previous</span>
 						</button>
-						<button class="carousel-control-next" type="button" data-bs-target="#taskList" data-bs-slide="next">
+						<button class="carousel-control-next arrow-outside" type="button" data-bs-target="#taskList" data-bs-slide="next">
 							<span class="carousel-control-next-icon" aria-hidden="true"></span>
 							<span class="visually-hidden">Next</span>
 						</button>
 					</div>
 				</div>
 			</div>
+		</div>		
+
+		<!-- Carousel Indicators at Bottom -->
+		<div class="d-flex justify-content-center align-items-center mt-2">
+			
+		</div>
+
+		<!-- Active Organ Cases Section -->
+		<div class="ms-5">
+			<h6>Active Organ Cases</h6>
+		</div>
+
+		<!-- Active Organ Cases Cards -->
+		<div class="container">
+			<div class="row row-cols-md-2 row-cols-lg-2 g-4">
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h6>Donor Name</h6>
+							<p>UNOS ID: ######</p>
+							<p>CORE ID: ######</p>
+							<div class="justify-content-between">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									TrackerBoard Card
+								</button>
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									AOC Form
+								</button>
+							</div>
+							
+						</div>
+					</div>					
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h6>Donor Name</h6>
+							<p>UNOS ID: ######</p>
+							<p>CORE ID: ######</p>
+							<div class="justify-content-between">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									TrackerBoard Card
+								</button>
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									AOC Form
+								</button>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h6>Donor Name</h6>
+							<p>UNOS ID: ######</p>
+							<p>CORE ID: ######</p>
+							<div class="justify-content-between">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									TrackerBoard Card
+								</button>
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									AOC Form
+								</button>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h6>Donor Name</h6>
+							<p>UNOS ID: ######</p>
+							<p>CORE ID: ######</p>
+							<div class="justify-content-between">
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									TrackerBoard Card
+								</button>
+								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									AOC Form
+								</button>
+							</div>
+						</div>
+					</div>					
+				</div>
+			</div>
+        </div>
+
+		<!-- TrackerBoard Card -->
+		<div class="modal fade" id="trackerBoardCard" tabindex="-1" aria-labelledby="trackerBoardCardLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="trackerBoardCardLabel">TrackerBoard Card</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<!-- Add TrackerBoard Card details here -->
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+			</div>
+		</div>
+		</div>
+
+		<!-- AOC Form -->
+		<div class="modal fade" id="AOCForm" tabindex="-1" aria-labelledby="AOCFormLabel" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-scrollable"> <!-- Added scrolling function for AOC Form -->
+			<div class="modal-content">
+			<div class="modal-header">
+				<h1 class="modal-title fs-5" id="AOCFormLabel">AOC Form</h1>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+			</div>
+			<div class="modal-body">
+				<!-- Add AOC Sections here -->
+				...
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				<button type="button" class="btn btn-primary">Save changes</button>
+			</div>
+			</div>
+		</div>
 		</div>
   	</body>
 </html>
