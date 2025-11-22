@@ -165,19 +165,23 @@
 
 					<div class="row">
 						<!--TOD & Recent Edits-->
-						<div class="col-4">
+						<div class="col-6 h-100">
 							<p>TOD</p>
 							<p>Recent Edits</p>
 						</div>
 
 						<!--Buttons-->
-						<button type="button" class="btn btn-primary col-4" data-bs-toggle="modal" data-bs-target="#AOCForm">
-							AOC Form
-						</button>
+						<div class="col-3 h-100">
+							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+								AOC Form
+							</button>
+						</div>
 
-						<button type="button" class="btn btn-primary col-4" data-bs-toggle="modal" data-bs-target="#">
-							Notes
-						</button>
+						<div class="col-3 h-100">
+							<button type="button" class="btn btn-primary col-3" data-bs-toggle="modal" data-bs-target="#">
+								Notes 
+							</button>
+						</div>
 						
 					</div>
 				</div>
@@ -188,42 +192,48 @@
 				<!--HLA  & Blood Type-->
 				<div class="container-sm">
 					<div class="row">
-						<div class="card col-3">
-							<div class="card-body">
-								<div class="card-title">
-									<h4>
-										HLA 
-									</h4>
-								</div>
+						<div class="col-3">
+							<div class="card h-100">
+								<div class="card-body">
+									<div class="card-title">
+										<h4>
+											HLA 
+										</h4>
+									</div>
 
-								<div class="form-check-inline">
-									<input class="form-check-input" type="checkbox" checked disabled>
+									<div class="form-check-inline">
+										<input class="form-check-input" type="checkbox" checked disabled>
+									</div>
+
 								</div>
 
 							</div>
-
 						</div>
 
-						<div class="card col-9">
-							<div class="card-body">
-								<div class="card-title">
-									<h4>
-										Hospital ABO 
-									</h4>
-								</div>
+						<div class="col-9">
+							<div class="card h-100">
+								<div class="card-body">
+									<div class="card-title">
+										<h4>
+											Hospital ABO 
+										</h4>
+									</div>
+									<div class="card-text">
+										<div class="row">
+											<div class="col-3">
+												<div class="form-check-inline">
+													<input class="form-check-input" type="checkbox" checked disabled>
+												</div>
+											</div>
 
-								<div class="card-text">
-									<div class="row">
-										<div class="form-check-inline col-3">
-											<input class="form-check-input" type="checkbox" checked disabled>
+											<div class="col-9">
+												<p><strong>Blood Type:</strong>A</p>
+											</div>
 										</div>
-										<p class="col-9"><strong>Blood Type:</strong>A</p>
-
 									</div>
 								</div>
 
 							</div>
-
 						</div>
 
 					</div>
@@ -234,20 +244,74 @@
 
 				<h2>Time Sensitive</h2>
 
-				<div class="row">
+				<div id="expiringTests" class="row">
 					<div class="col-4">
-						<div class="card">
+						<div class="card text-center h-100">
 							<div class="card-title">
 								<h4>
 									Serologies
 								</h4>
-
 							</div>
 
 							<div clss="card-body"> 
+								<p>icon</p>
+								<p><strong>9 hours left</strong></p>
+								<p><strong>No positive</strong></p>
 
 							</div>
 						</div>
+
+					</div>
+					<div class="col-4">
+
+						<div class="card text-center h-100">
+							<div class="card-title">
+								<h4>
+									COVID
+								</h4>
+							</div>
+
+							<div clss="card-body"> 
+								<p>icon</p>
+								<p><strong>5 hours left</strong></p>
+								<p><strong>Negative</strong></p>
+
+							</div>
+						</div>
+
+					</div>
+
+					<div class="col-4">
+
+						<div class="card text-center h-100">
+							<div class="card-title">
+								<h4>
+									UA Time Out
+								</h4>
+							</div>
+
+							<div clss="card-body"> 
+								<p>icon</p>
+								<p><strong>85 hours out</strong></p>
+								<p><strong>No infections</strong></p>
+
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+
+				<br>
+				<!--Personnel-->
+				<h2>Personnel</h2>
+
+				<div id="personnel">
+					<div class="card col">
+						<p>DRC:</p>
+						<p>Recovery:</p>
+						<p>Designated Requestor</p>
+						<p>OPC:</p>
 
 					</div>
 
