@@ -85,7 +85,7 @@
 
 		<!-- Active Organ Cases Cards -->
 		<div class="container">
-			<div class="row row-cols-md-2 row-cols-lg-2 g-4">
+			<div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-4">
 				<div class="col">
 					<div class="card">
 						<div class="card-body">
@@ -93,10 +93,10 @@
 							<p>UNOS ID: ######</p>
 							<p>CORE ID: ######</p>
 							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
 									TrackerBoard Card
 								</button>
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
 									AOC Form
 								</button>
 							</div>
@@ -111,10 +111,10 @@
 							<p>UNOS ID: ######</p>
 							<p>CORE ID: ######</p>
 							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
 									TrackerBoard Card
 								</button>
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
 									AOC Form
 								</button>
 							</div>
@@ -128,10 +128,10 @@
 							<p>UNOS ID: ######</p>
 							<p>CORE ID: ######</p>
 							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
 									TrackerBoard Card
 								</button>
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
 									AOC Form
 								</button>
 							</div>
@@ -145,10 +145,10 @@
 							<p>UNOS ID: ######</p>
 							<p>CORE ID: ######</p>
 							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
 									TrackerBoard Card
 								</button>
-								<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
 									AOC Form
 								</button>
 							</div>
@@ -177,20 +177,20 @@
 					<div class="row">
 						<!--TOD & Recent Edits-->
 						<div class="col-6 h-100">
-							<p>TOD</p>
-							<p>Recent Edits</p>
+							<p id="TOD">TOD: 10-29-2025 9:15</p>
+							<p id="update">Last Updated: 10-29-2025 16:15</p>
 						</div>
 
 						<!--Buttons-->
 						
 						<div class="col-3 h-100">
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#AOCForm">
+							<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
 								AOC Form
 							</button>
 						</div>
 
 						<div class="col-3 h-100">
-							<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#">
+							<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#">
 								Notes 
 							</button>
 						</div>
@@ -205,7 +205,7 @@
 				<div class="container-sm">
 					<div class="row">
 						<div class="col-3">
-							<div class="card h-100 text-align">
+							<div class="card h-100">
 								<div class="card-body">
 									<div class="card-title">
 										<h4>
@@ -214,7 +214,7 @@
 									</div>
 
 									<div class="form-check">
-										<input class="form-check-input" type="checkbox" checked disabled>
+										<input class="form-check-input COREcheckbox" type="checkbox" checked disabled>
 									</div>
 								</div>
 							</div>
@@ -257,15 +257,16 @@
 
 				<div id="expiringTests" class="row">
 					<div class="col-4">
-						<div class="card text-center h-100 p-2">
+						<div class="card text-center h-100">
 							<div class="card-title">
-								<h4>
+								<h5>
 									Serologies
-								</h4>
+								</h5>
 							</div>
 
 							<div class="card-body"> 
-								<p>icon</p>
+								<img src="img/Serology.png" class="img-fluid testIcons">
+								
 								<p class="expiration"><strong>9 hours left</strong></p>
 								<p><strong>No positive</strong></p>
 
@@ -275,15 +276,16 @@
 					</div>
 					<div class="col-4">
 
-						<div class="card text-center h-100 p-2">
+						<div class="card text-center h-100">
 							<div class="card-title">
-								<h4>
+								<h5>
 									COVID
-								</h4>
+								</h5>
 							</div>
 
 							<div class="card-body"> 
-								<p>icon</p>
+								<img src="img/CovidExpired.png" class="img-fluid testIcons">
+								<br>
 								<p class="expiration">5 hours left</p>
 								<p><strong>Negative</strong></p>
 
@@ -294,17 +296,18 @@
 
 					<div class="col-4">
 
-						<div class="card text-center h-100 p-2">
+						<div class="card text-center h-100">
 							<div class="card-title">
-								<h4>
+								<h5>
 									UA Time Out
-								</h4>
+								</h5>
 							</div>
 
 							<div class="card-body"> 
-								<p>icon</p>
+								<img src="img/UA_TimeOut_Expired.png" class="img-fluid testIcons">
+								<br>
 								<p class="expiration">85 hours out</p>
-								<p><strong>No infections</strong></p>
+								<p><strong>No infection</strong></p>
 							</div>
 						</div>
 					</div>
@@ -316,11 +319,43 @@
 
 				<div id="personnel">
 					<div class="col">
-						<div class="card p-2">
-							<p>DRC:</p>
-							<p>Recovery:</p>
-							<p>Designated Requestor</p>
-							<p>OPC:</p>
+						<div class="card p-4">
+							<div class="form-group row">
+								<label for="DRC" class="col-4 col-form-label">DRC</label>
+								<div class="col-8">
+									<input type="text" class="form-control" id="DRC">
+								</div>
+							</div>
+
+							<br>
+
+							<div class="form-group row">
+								<label for="recovery" class="col-4 col-form-label">Recovery</label>
+								<div class="col-8">
+									<input type="text" class="form-control" id="recovery">
+								</div>
+							</div>
+
+							<br>
+
+							<div class="form-group row">
+								<label for="requestor" class="col-4 col-form-label">Designated Requestor</label>
+								<div class="col-8">
+									<input type="text" class="form-control" id="requestor">
+								</div>
+							</div>
+
+							<br>
+
+							<div class="form-group row">
+								<label for="opc" class="col-4 col-form-label">OPC</label>
+								<div class="col-8">
+									<input type="text" class="form-control" id="opc">
+								</div>
+							</div>
+
+							<br>
+
 
 						</div>
 					</div>
