@@ -34,19 +34,35 @@ body {
 }
 
 /*trackerboard css styling */
+#OR{
+    font-weight: bold; 
+    background-color:#e5e5e5; 
+    color: rgb(255, 166, 0); 
+    border-radius: 10px; 
+    font-size: 1.25 em; 
+    padding: 0.5em; 
+}
+
 #TOD{
     font-weight: bold; 
     color:#00703B;
 
 }
 
+button img{
+    max-width: 4em; 
+    max-height: 4em; 
+}
+
+
 #update{
     color:#00703B;
     font-size: 0.75em; 
 }
 
-.COREcheckbox{
-    background-color: #00703B;
+.checkmark{
+    max-width: 3em; 
+    max-height: 3em;
 }
 .COREbutton{
     border-radius: 100px; 

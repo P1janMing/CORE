@@ -163,16 +163,16 @@
 		<div class="modal-dialog">
 			<div class="modal-content">
 			<div class="modal-header">
-				<h1 class="modal-title fs-5" id="trackerBoardCardLabel">TrackerBoard Card</h1>
+				<h1 class="modal-title fs-5" id="trackerBoardCardLabel">Donor Name (AGE)</h1>
 				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			<div class="modal-body">
 				<!-- Add TrackerBoard Card details here -->
 				<div class="trackerboard-header">
-					<h2>Donor Name (AGE)</h2>
 					<h4>UNOS ID</h4>
 					<h4>CORE ID</h4>
 					<p>PGCV</p>
+					<p id="OR">OR Date: 10-30-2025 10:20</p>
 
 					<div class="row">
 						<!--TOD & Recent Edits-->
@@ -184,8 +184,8 @@
 						<!--Buttons-->
 						
 						<div class="col-3 h-100">
-							<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-								AOC Form
+							<button type="button" class="imgButton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+								<img src="img/AOCFormButton.png">
 							</button>
 						</div>
 
@@ -212,10 +212,8 @@
 											HLA 
 										</h4>
 									</div>
-
-									<div class="form-check">
-										<input class="form-check-input COREcheckbox" type="checkbox" checked disabled>
-									</div>
+				
+									<img class="checkmark" src="img/checkmark.png">
 								</div>
 							</div>
 						</div>
@@ -231,14 +229,15 @@
 									<div class="card-text">
 										<div class="row">
 											<div class="col-3 justify-content-center">
-												<div class="form-check-inline">
-													<input class="form-check-input" type="checkbox" checked disabled>
-												</div>
+												<img class="checkmark" src="img/checkmark.png">
 											</div>
 
-											<div class="col-9">
-												<p>Blood Type: <strong class="blood-type">A</strong></p>
+											<div class="col-3">
+												<p>Blood Type: </p>
+											</div>
 
+											<div class="col-6">
+												<p><strong class="blood-type">A</strong></p>
 											</div>
 										</div>
 									</div>
