@@ -64,6 +64,7 @@ button img{
     max-width: 3em; 
     max-height: 3em;
 }
+
 .COREbutton{
     border-radius: 100px; 
     border-color:  #00703B;
@@ -85,7 +86,7 @@ button img{
 }
 strong.blood-type{
     font-weight: bold; 
-    font-size: 2em;
+    font-size: 4em;
 }
 
 .form-check-input{
