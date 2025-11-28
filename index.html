@@ -92,31 +92,21 @@
 							<h6>Donor Name</h6>
 							<p>UNOS ID: ######</p>
 							<p>CORE ID: ######</p>
-							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-									TrackerBoard Card
-								</button>
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-									AOC Form
-								</button>
-							</div>
-							
-						</div>
-					</div>					
-				</div>
-				<div class="col">
-					<div class="card">
-						<div class="card-body">
-							<h6>Donor Name</h6>
-							<p>UNOS ID: ######</p>
-							<p>CORE ID: ######</p>
-							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-									TrackerBoard Card
-								</button>
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-									AOC Form
-								</button>
+							<div class="row row-cols-2">
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.Button.Trackerboard.png">
+										</div>
+									</button>
+								</div>
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.AOCForm.png">
+										</div>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>					
@@ -127,13 +117,21 @@
 							<h6>Donor Name</h6>
 							<p>UNOS ID: ######</p>
 							<p>CORE ID: ######</p>
-							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-									TrackerBoard Card
-								</button>
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-									AOC Form
-								</button>
+							<div class="row row-cols-2">
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.Button.Trackerboard.png">
+										</div>
+									</button>
+								</div>
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.AOCForm.png">
+										</div>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>					
@@ -144,13 +142,46 @@
 							<h6>Donor Name</h6>
 							<p>UNOS ID: ######</p>
 							<p>CORE ID: ######</p>
-							<div class="justify-content-between">
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-									TrackerBoard Card
-								</button>
-								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-									AOC Form
-								</button>
+							<div class="row row-cols-2">
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.Button.Trackerboard.png">
+										</div>
+									</button>
+								</div>
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.AOCForm.png">
+										</div>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>					
+				</div>
+				<div class="col">
+					<div class="card">
+						<div class="card-body">
+							<h6>Donor Name</h6>
+							<p>UNOS ID: ######</p>
+							<p>CORE ID: ######</p>
+							<div class="row row-cols-2">
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.Button.Trackerboard.png">
+										</div>
+									</button>
+								</div>
+								<div class="col">
+									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+										<div class="trackerboard-button p-2">
+											<img src="img/Dashboard.AOCForm.png">
+										</div>
+									</button>
+								</div>
 							</div>
 						</div>
 					</div>					
@@ -390,12 +421,32 @@
 		</div>
 		</div>
 
-		<nav class="navbar navbar-light bg-light">
-			<div class="container-fluid d-flex justify-content-around p-3">
-				<a class="nav-link active" aria-current="page" href="#">Home</a>
-				<a class="nav-link" href="#">Trackerboard</a>
-				<a class="nav-link" href="#">Export/Print</a>
+		<nav class="navbar navbar-light bg-light fixed-bottom">
+			<div class="container-fluid">
+				<div class="row w-100 text-center">
+					<!-- Home -->
+					<div class="col">
+						<a class="nav-link d-flex flex-column align-items-center" href="#">
+							<img src="img/Dashboard.Home.png" class="nav-icon mb-1" alt="">
+						</a>
+					</div>
+
+					<!-- Trackerboard -->
+					<div class="col">
+						<a class="nav-link d-flex flex-column align-items-center" href="#">
+							<img src="img/Dashboard.Trackerboard.png" class="nav-icon mb-1" alt="">
+						</a>
+					</div>
+
+					<!-- Export/Print -->
+					<div class="col">
+						<a class="nav-link d-flex flex-column align-items-center" href="#">
+							<img src="img/Dashboard.Export.png" class="nav-icon mb-1" alt="">
+						</a>
+					</div>
+				</div>
 			</div>
 		</nav>
+
   	</body>
 </html>

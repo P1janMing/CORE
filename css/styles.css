@@ -7,6 +7,10 @@ body {
     background-color:lightgrey;
 }
 
+h6 {
+    font-weight: bold;
+}
+
 .notifsText {
     font-size: 14px;
 }
@@ -95,4 +99,18 @@ strong.blood-type{
 
 input.form-control:hover{
     background-color: #75BC72; 
+}
+
+a.nav-link img {
+    width: auto;
+    height: 4rem;
+}
+
+body {
+    overflow: scroll;
+}
+
+.trackerboard-button img {
+    max-width: 2em; 
+    max-height: 2em;
 }
