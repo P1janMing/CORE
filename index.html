@@ -20,15 +20,16 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 		<!-- Notifications Section -->
-		<div class="card m-5" id="NotificationsCard">
+		<div class="card m-5 mb-3 mt-3" id="NotificationsCard">
 			<div class="card-body">
 				<h6>Notifications/Updates Regarding Assigned Cases</h6>
-				<p class="notifsText">Referral ID: ###### | User: Full name | Time: mm/dd/yyyy</p>
-				<p class="notifsText">Referral ID: ###### | User: Full name | Time: mm/dd/yyyy</p>
+				<p class="notifsText mb-1">Referral ID: ###### | User: Full name | Time: mm/dd/yyyy</p>
+				<p class="notifsText mb-0">Referral ID: ###### | User: Full name | Time: mm/dd/yyyy</p>
 			</div>
 		</div>
 
-		<div class="card m-5" id="NotificationsCard">
+		<!-- Task List Section -->
+		<div class="card m-5 mb-3 mt-3" id="NotificationsCard">
 			<div class="card-body">
 				<div class="carousel-container">
 					<div id="taskList" class="carousel slide">
@@ -38,19 +39,19 @@
 								<h6>Task List</h6>
 								<p>Referral ID: ###### | Deadline: mm/dd/yyyy</p>
 								<p>Task description: Description of task, in bullets or paragraphs based on notes from previous AOC. Anything miscellaneous can also go here.</p>
-								<p>AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
+								<p class="mb-1">AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
 							</div>
 							<div class="carousel-item">
 								<h6>Task List</h6>
 								<p>Referral ID: ###### | Deadline: mm/dd/yyyy</p>
 								<p>Task description: Description of task, in bullets or paragraphs based on notes from previous AOC. Anything miscellaneous can also go here.</p>
-								<p>AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
+								<p class="mb-1">AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
 							</div>
 							<div class="carousel-item">
 								<h6>Task List</h6>
 								<p>Referral ID: ###### | Deadline: mm/dd/yyyy</p>
 								<p>Task description: Description of task, in bullets or paragraphs based on notes from previous AOC. Anything miscellaneous can also go here.</p>
-								<p>AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
+								<p class="mb-1">AOC Form Sections to visit: <br> - Overview <br> - OR Info</p>
 							</div>
 						</div>
 
@@ -84,29 +85,25 @@
 		</div>
 
 		<!-- Active Organ Cases Cards -->
-		<div class="container">
-			<div class="row row-cols-sm-2 row-cols-md-2 row-cols-lg-2 g-4">
+		<div class="container px-5">
+			<div class="row row-cols-1 row-cols-sm-2 g-4">
 				<div class="col">
 					<div class="card">
 						<div class="card-body">
 							<h6>Donor Name</h6>
-							<p>UNOS ID: ######</p>
-							<p>CORE ID: ######</p>
-							<div class="row row-cols-2">
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.Button.Trackerboard.png">
-										</div>
-									</button>
-								</div>
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.AOCForm.png">
-										</div>
-									</button>
-								</div>
+							<p class="mb-1">UNOS ID: ######</p>
+							<p class="mb-3">CORE ID: ######</p>
+							<div class="d-flex justify-content-center gap-5">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.Button.Trackerboard.png">
+									</div>
+								</button>
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.AOCForm.png">
+									</div>
+								</button>
 							</div>
 						</div>
 					</div>					
@@ -115,23 +112,19 @@
 					<div class="card">
 						<div class="card-body">
 							<h6>Donor Name</h6>
-							<p>UNOS ID: ######</p>
-							<p>CORE ID: ######</p>
-							<div class="row row-cols-2">
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.Button.Trackerboard.png">
-										</div>
-									</button>
-								</div>
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.AOCForm.png">
-										</div>
-									</button>
-								</div>
+							<p class="mb-1">UNOS ID: ######</p>
+							<p class="mb-3">CORE ID: ######</p>
+							<div class="d-flex justify-content-center gap-5">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.Button.Trackerboard.png">
+									</div>
+								</button>
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.AOCForm.png">
+									</div>
+								</button>
 							</div>
 						</div>
 					</div>					
@@ -140,23 +133,19 @@
 					<div class="card">
 						<div class="card-body">
 							<h6>Donor Name</h6>
-							<p>UNOS ID: ######</p>
-							<p>CORE ID: ######</p>
-							<div class="row row-cols-2">
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.Button.Trackerboard.png">
-										</div>
-									</button>
-								</div>
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.AOCForm.png">
-										</div>
-									</button>
-								</div>
+							<p class="mb-1">UNOS ID: ######</p>
+							<p class="mb-3">CORE ID: ######</p>
+							<div class="d-flex justify-content-center gap-5">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.Button.Trackerboard.png">
+									</div>
+								</button>
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.AOCForm.png">
+									</div>
+								</button>
 							</div>
 						</div>
 					</div>					
@@ -165,23 +154,19 @@
 					<div class="card">
 						<div class="card-body">
 							<h6>Donor Name</h6>
-							<p>UNOS ID: ######</p>
-							<p>CORE ID: ######</p>
-							<div class="row row-cols-2">
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.Button.Trackerboard.png">
-										</div>
-									</button>
-								</div>
-								<div class="col">
-									<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
-										<div class="trackerboard-button p-2">
-											<img src="img/Dashboard.AOCForm.png">
-										</div>
-									</button>
-								</div>
+							<p class="mb-1">UNOS ID: ######</p>
+							<p class="mb-3">CORE ID: ######</p>
+							<div class="d-flex justify-content-center gap-5">
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#trackerBoardCard">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.Button.Trackerboard.png">
+									</div>
+								</button>
+								<button type="button" class="btn btn-primary COREbutton" data-bs-toggle="modal" data-bs-target="#AOCForm">
+									<div class="trackerboard-button p-2">
+										<img src="img/Dashboard.AOCForm.png">
+									</div>
+								</button>
 							</div>
 						</div>
 					</div>					

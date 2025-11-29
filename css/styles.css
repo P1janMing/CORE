@@ -53,6 +53,11 @@ h6 {
 
 }
 
+button.imgButton {
+    background: none !important;
+    border: none !important;
+}
+
 button img{
     max-width: 4em; 
     max-height: 4em; 
