@@ -178,3 +178,32 @@ body {
 #export {
     color: #00703B;
 }
+
+.marker {
+    max-width: .5em; 
+    max-height: .5em;
+}
+
+/* prefilled form sections */
+#inputCOREID, 
+#inputUNOSID, 
+#inputDonorName, 
+#inputAge, 
+#inputSex,
+#inputHospital,
+#inputAdmitted,
+#inputTOD,
+#inputABO,
+#inputHeightFT,
+#inputHeightIN,
+#inputWeight,
+#inputBMI,
+#inputSDD,
+#inputPS,
+#inputCOVID,
+#inputDL,
+#inputOPCDR,
+#inputXClamp,
+#inputWIT {
+    background-color: #F1FFE0 !important ;
+}
