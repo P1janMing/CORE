@@ -396,7 +396,640 @@
 			</div>
 			<div class="modal-body">
 				<!-- Add AOC Sections here -->
-				...
+
+				<!-- Sections Complete/ Incomplete -->
+				<div class="containerExport">
+					<div class="row">
+					  <div class="col">
+						<b>AOC Form</b>: Donor Name
+					  </div>
+					  <div id="export" class="col text-end">
+						<img class="printerIcon" src="img/Printer.png"> Export/Print
+					  </div>
+					</div>
+				</div>
+				<div class="containerProgressBar">
+					<div class="row">
+					  <div class="col">
+						<div class="progress" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">
+							<div class="progress-bar bg-success" style="width: 25%"></div>
+						</div>
+					  </div>
+					  <div class="col">
+						High Priority
+					  </div>
+					</div>
+				</div>
+
+				<hr id="AOCHeaderLine">
+				<div class="containerSections">
+					<p id="sectionsCompHeader">Sections Complete/Incomplete</p>
+					<div class="row">
+					  <div class="col">Overview <img class="checkmarkAOC" src="img/checkmark.png"></div>
+					  <div class="col">Organ Outcome <img class="checkmarkAOC" src="img/checkmark.png"></div>
+					  <div class="w-100"></div>
+					  <div class="col">Medical Info <img class="checkmarkAOC" src="img/checkmark.png"></div>
+					  <div class="col">OR Info <img class="checkmarkAOC" src="img/checkmark.png"></div>
+					</div>
+				  </div>
+				
+				<div class="accordion" id="accordionExample">
+					<div class="form-row row">
+						<div class="form-group col-md-6">
+						  <p id="collapseAll" for="inputCOREID">Collapse All</p>
+						</div>
+						<div class="form-group col-md-6">
+							<label for="JTS">Jump To Section</label>
+							<select id="JTS" class="form-control">
+								<option selected>   </option>
+								<option>Overview</option>
+								<option>Medical Info</option>
+								<option>Organ Outcome</option>
+								<option>OR Info</option>
+								<option>Notes</option>
+							  </select>
+					  </div>
+					</div>
+					<!-- Overview Section -->
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingOne">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+						  Overview
+						</button>
+					  </h2>
+					  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+						<div class="accordion-body">
+							<!-- Overview Form -->
+							<form id="overviewForm">
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputCOREID">CORE ID</label>
+									  <input type="text" class="form-control" id="inputCOREID">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputUNOSID">UNOS ID</label>
+									  <input type="text" class="form-control" id="inputUNOSID">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+								  		<label for="inputDonorName">Donor Name</label>
+								  		<input type="text" class="form-control" id="inputDonorName">
+									</div>
+									<div class="form-group col-md-4">
+								  		<label for="inputAge">Age (yrs)</label>
+								  		<input type="text" class="form-control" id="inputAge">
+									</div>
+									<div class="form-group col-md-2">
+										<label for="inputSex">Sex</label>
+										<select id="inputSex" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+								  </div>
+								</div>
+								<div class="form-row row">
+								  <div class="form-group col-md-6">
+									<label for="inputCity">Hospital</label>
+									<input type="text" class="form-control" id="inputHospital">
+								  </div>
+								  <div class="form-group col-md-6">
+									<label for="inputAddress">OPC On-Site</label>
+									<input type="text" class="form-control" id="inputOPC">
+							  	  </div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputBD/DCD">BD/DCD</label>
+									  <input type="text" class="form-control" id="inputBD/DCD">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputNRP">NRP</label>
+									  <input type="text" class="form-control" id="inputNRP">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-5">
+									  <label for="inputAdmitted">Admitted</label>
+									  <input type="date" class="form-control" id="inputAdmitted" placeholder="mm/dd/yyyy">
+									</div>
+									<div class="form-group col-md-7">
+									  <label for="inputAdmissionNotes">Admission Notes</label>
+									  <input type="passwod" class="form-control" id="inputAdmissionNotes">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-5">
+									  <label for="inputTOD">Time of Death</label>
+									  <input type="date" class="form-control" id="inputTOD" placeholder="mm/dd/yyyy">
+									</div>
+									<div class="form-group col-md-7">
+									  <label for="inputDiagnosis">Diagnosis</label>
+									  <input type="text" class="form-control" id="inputDiagnosis">
+									</div>
+								</div>
+							  </form>
+						</div>
+					  </div>
+					</div>
+					<!-- Medicial Info Section -->
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingTwo">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+						  Medical Info
+						</button>
+					  </h2>
+					  <div id="collapseTwo" class="accordion-collapse collapse show" aria-labelledby="headingTwo">
+						<div class="accordion-body">
+							<!-- Medical Info Form -->
+						  <form>
+							<div class="form-group">
+								<label for="inputPMH">Past Medical History</label>
+								<input type="text" class="form-control" id="inputPMH">
+							</div>
+							<div class="form-row row">
+								<div class="form-group col-md-6">
+									  <label for="inputABO">ABO</label>
+									  <input type="text" class="form-control" id="inputABO">
+								</div>
+								<div class="form-group col-md-3">
+									  <label for="inputHeightFT">Height (ft)</label>
+									  <input type="text" class="form-control" id="inputHeightFT">
+								</div>
+								<div class="form-group col-md-3">
+									<label for="inputHeightIN">Height (in)</label>
+									<select id="inputHeightIN" class="form-control">
+										<option selected>   </option>
+										<option>M</option>
+										<option>F</option>
+									  </select>
+								</div>
+							</div>
+							<div class="form-row row">
+								<div class="form-group col-md-4">
+									  <label for="inputWeight">Weight</label>
+									  <input type="text" class="form-control" id="inputWeight">
+								</div>
+								<div class="form-group col-md-4">
+									  <label for="inputBMI">BMI</label>
+									  <input type="text" class="form-control" id="inputBMI">
+								</div>
+								<div class="form-group col-md-4">
+									<label for="inputRiskCriteria">Risk Criteria</label>
+									<select id="inputRiskCriteria" class="form-control">
+										<option selected>   </option>
+										<option>M</option>
+										<option>F</option>
+									  </select>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputSDD">Serology Draw Date</label>
+									  <input type="date" class="form-control" id="inputSDD" placeholder="mm/dd/yyyy">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputPS">Positive Serologies (96 hr)</label>
+									  <input type="date" class="form-control" id="inputPS" placeholder="mm/dd/yyyy">
+									</div>
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputCOVID">COVID Obtained/Results (72 hr)</label>
+								<input type="text" class="form-control" id="inputCOVID">
+							</div>
+							<div class="form-row row">
+								<div class="form-group col-md-6">
+								  <label for="inputDL">DL</label>
+								  <input type="text" class="form-control" id="inputDL">
+								</div>
+								<div class="form-group col-md-6">
+								  <label for="inputOPC/DR">OPC/DR</label>
+								  <input type="text" class="form-control" id="inputOPC/DR">
+								</div>
+							</div>
+							<div class="form-row row">
+								<div class="form-group col-md-6">
+								  <label for="inputAuthorization">Authorization</label>
+								  <input type="text" class="form-control" id="inputAuthorization">
+								</div>
+								<div class="form-group col-md-6">
+								  <label for="inputMove">Auth Move</label>
+								  <input type="text" class="form-control" id="inputMove">
+								</div>
+							</div>
+							<div class="form-row row">
+								<div class="form-group col-md-6">
+								  <label for="inputTimeConstraints">Time Constraints</label>
+								  <input type="text" class="form-control" id="inputTimeConstraints">
+								</div>
+								<div class="form-group col-md-6">
+								  <label for="inputFH">Funeral Home</label>
+								  <input type="text" class="form-control" id="inputFH">
+								</div>
+							</div>
+							<div class="form-group">
+								<label for="inputExaminer">Medical Examiner/Coroner</label>
+								<input type="text" class="form-control" id="inputExaminer">
+							</div>
+
+						  </form>
+						</div>
+					  </div>
+					</div>
+					<!-- Organ Outcome Section -->
+					<div class="accordion-item">
+					  <h2 class="accordion-header" id="headingThree">
+						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+						  Organ Outcome
+						</button>
+					  </h2>
+					  <div id="collapseThree" class="accordion-collapse collapse show" aria-labelledby="headingThree">
+						<div class="accordion-body">
+							<!-- Organ Outcome Form -->
+							<form>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputHeart">Heart</label>
+									  <input type="text" class="form-control" id="inputHeart">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputDevices1">Devices</label>
+									  <input type="text" class="form-control" id="inputDevices1">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputEcho">Echo</label>
+									  <input type="text" class="form-control" id="inputEcho">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputCath">Cath</label>
+									  <input type="text" class="form-control" id="inputCath">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputHNotes">Heart Notes</label>
+									<input type="text" class="form-control" id="inputHNotes">
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputLung">Lung</label>
+									  <input type="text" class="form-control" id="inputLung">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputDevices2">Devices</label>
+									  <input type="text" class="form-control" id="inputDevices2">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputLiver">Liver</label>
+									  <input type="text" class="form-control" id="inputLiver">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputDevices3">Devices</label>
+									  <input type="text" class="form-control" id="inputDevices3">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputPancreas">Pancreas</label>
+									  <input type="text" class="form-control" id="inputPancreas">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputResearch1">Research</label>
+									  <input type="text" class="form-control" id="inputResearch1">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputImagingNotes">Imaging Notes</label>
+									<input type="text" class="form-control" id="inputImagingNotes">
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-4">
+										  <label for="inputTrillium">Trillium</label>
+										  <input type="text" class="form-control" id="inputTrillium">
+									</div>
+									<div class="form-group col-md-4">
+										  <label for="inputBronch">Bronch</label>
+										  <input type="text" class="form-control" id="inputBronch">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="inputPaO2">PaO2</label>
+										<select id="inputPaO2" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-4">
+										  <label for="inputBiopsy1">Biopsy</label>
+										  <input type="text" class="form-control" id="inputBiopsy1">
+									</div>
+									<div class="form-group col-md-4">
+										  <label for="inputOrganOX">OrganOX</label>
+										  <input type="text" class="form-control" id="inputOrganOX">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="inputOXNotes">OrganOX Notes</label>
+										<select id="inputOXNotes" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputIntestine">Intestine</label>
+									<input type="text" class="form-control" id="inputIntestine">
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="input0MM">Kidney 0MM</label>
+									  <input type="text" class="form-control" id="input0MM">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputHPRA">Kidney HPRA</label>
+									  <input type="text" class="form-control" id="inputHPRA">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputLKO">Left Kidney Outcome</label>
+									  <input type="text" class="form-control" id="inputLKO">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputRKO">Right Kidney Outcome</label>
+									  <input type="text" class="form-control" id="inputRKO">
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputReasearch2">Research</label>
+									<input type="text" class="form-control" id="inputResearch2">
+								</div>
+								<div class="form-group">
+									<label for="inputPK">Provisional Kidney</label>
+									<input type="text" class="form-control" id="inputPK">
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputBiopsy2">Biopsy</label>
+									  <input type="text" class="form-control" id="inputBiopsy2">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputPump">Pump</label>
+									  <input type="text" class="form-control" id="inputPump">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-7">
+									  <label for="inputTTF">Tissue to Follow/Location</label>
+									  <input type="text" class="form-control" id="inputTTF">
+									</div>
+									<div class="form-group col-md-5">
+									  <label for="inputHV">HV</label>
+									  <input type="text" class="form-control" id="inputHV">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputEye">Eye</label>
+									  <input type="text" class="form-control" id="inputEye">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputExtraVessels">Extra Vessels</label>
+									  <input type="text" class="form-control" id="inputExtraVessels">
+									</div>
+								</div>
+
+
+
+							</form>
+						</div>
+					  </div>
+					</div>
+					<!-- OR Info Section -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFour">
+						  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+							OR Info
+						  </button>
+						</h2>
+						<div id="collapseFour" class="accordion-collapse collapse show" aria-labelledby="headingFour">
+						  <div class="accordion-body">
+							<!-- OR Info Form -->
+							<form>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputPre-OR">Pre-OR Call Date/Time</label>
+									  <input type="date" class="form-control" id="inputPre-OR">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputORDate">OR Date/Time</label>
+									  <input type="date" class="form-control" id="inputORDate">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputORC">ORC</label>
+									  <input type="text" class="form-control" id="inputORC">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputAPDC">APDC</label>
+									  <input type="text" class="form-control" id="inputAPDC">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputPronouncing">Pronouncing</label>
+									  <input type="text" class="form-control" id="inputPronouncing">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputScanscope">Scanscope</label>
+									  <input type="text" class="form-control" id="inputScanscope">
+									</div>
+								</div>
+								
+								<div class="form-row row">
+									<div class="form-group col-md-4">
+										  <label for="inputSurgeon">Surgeon</label>
+										  <input type="text" class="form-control" id="inputSurgeon">
+									</div>
+									<div class="form-group col-md-4">
+										  <label for="inputFA">First Assist</label>
+										  <input type="text" class="form-control" id="inputFA">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="inputPerDiem">PerDiem</label>
+										<select id="imputPerDiem" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+										  <label for="inputBPP">Biopsy Plating/Pathology</label>
+										  <input type="text" class="form-control" id="inputBPP">
+									</div>
+									<div class="form-group col-md-3">
+										  <label for="inputSlush">Slush</label>
+										  <input type="text" class="form-control" id="inputSlush">
+									</div>
+									<div class="form-group col-md-3">
+										<label for="inputIce">Ice</label>
+										<select id="inputIce" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+									</div>
+								</div>
+		
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputFamily">Family to OR</label>
+									  <input type="text" class="form-control" id="inputFamily">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputHonor">Honor Walk</label>
+									  <input type="text" class="form-control" id="inputHonor">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputMR">Media Release</label>
+									  <input type="text" class="form-control" id="inputMR">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputDFS">DFS</label>
+									  <input type="text" class="form-control" id="inputDFS">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-4">
+										  <label for="inputXClamp">XClamp/Perfusion</label>
+										  <input type="date" class="form-control" id="inputXClamp">
+									</div>
+									<div class="form-group col-md-4">
+										  <label for="inputWIT">WIT</label>
+										  <input type="text" class="form-control" id="inputWIT">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="inputBypass">Bypass</label>
+										<select id="imputBypass" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="inputSD">Surgical Damage/CAPA/Planned Deviation</label>
+									<input type="text" class="form-control" id="inputSD">
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-4">
+										  <label for="inputPupils">Pupils</label>
+										  <input type="text" class="form-control" id="inputPupils">
+									</div>
+									<div class="form-group col-md-4">
+										  <label for="inputCorneals">Corneals</label>
+										  <input type="text" class="form-control" id="inputCorneals">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="inputCought">Cough</label>
+										<select id="imputCought" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-4">
+										  <label for="inputXGag">Gag</label>
+										  <input type="text" class="form-control" id="inputGag">
+									</div>
+									<div class="form-group col-md-4">
+										  <label for="inputOBV">OBV</label>
+										  <input type="text" class="form-control" id="inputOBV">
+									</div>
+									<div class="form-group col-md-4">
+										<label for="inputRespPain">Resp Pain</label>
+										<select id="imputRespPain" class="form-control">
+											<option selected>   </option>
+											<option>M</option>
+											<option>F</option>
+										  </select>
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputOther">Other</label>
+									  <input type="text" class="form-control" id="inputOther">
+									</div>
+									<div class="form-group col-md-6">
+									  <label for="inputSedation">Sedation</label>
+									  <input type="text" class="form-control" id="inputSedation">
+									</div>
+								</div>
+								<div class="form-row row">
+									<div class="form-group col-md-6">
+									  <label for="inputFC">Follows Commands</label>
+									  <input type="text" class="form-control" id="inputFC">
+									</div>
+								</div>
+							</form>
+						  </div>
+						</div>
+					  </div>
+					<!-- Notes -->
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="headingFive">
+						  <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+							Notes
+						  </button>
+						</h2>
+						<div id="collapseFive" class="accordion-collapse collapse show" aria-labelledby="headingFive">
+						  <div class="accordion-body">
+							<!-- Note Body -->
+
+
+							<div id="Notes">
+								<div class="col">
+									<div class="card p-4">
+										<div class="form-group row">
+											<label for="referralID" class="col-4 col-form-label">Referral ID:</label>
+											<div class="col-8">
+												<input type="text" class="form-control" id="Referral ID:" style="height: 100;">
+											</div>
+										</div>
+										<br>
+										<div class="form-group row">
+											<label for="noteBy" class="col-4 col-form-label">Note By:</label>
+										</div>
+										<br>
+										<div class="form-group row">
+											<label for="noteDate" class="col-4 col-form-label">Note Date:</label>
+										</div>
+										<br>
+										<div class="form-group row">
+											<label for="department" class="col-4 col-form-label">Department:</label>
+										</div>
+										<br>
+									</div>
+								</div>
+							</div>
+						
+						  </div>
+						</div>
+					  </div>
+				</div>
 			</div>
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
