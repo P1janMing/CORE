@@ -43,16 +43,25 @@ h6 {
     background-color:#e5e5e5; 
     color: rgb(255, 166, 0); 
     border-radius: 10px; 
-    font-size: 1.25 em; 
+    font-size: 1.5 em; 
     padding: 0.5em; 
+}
+
+#authorization{
+    color: #00703B; 
+    font-size: 1.25em;
 }
 
 #TOD{
     font-weight: bold; 
-    color:#00703B;
+    color:#7A7979;
 
 }
 
+#update{
+    color:#7A7979;
+    font-size: 0.75em; 
+}
 button.imgButton {
     background: none !important;
     border: none !important;
@@ -63,11 +72,6 @@ button img{
     max-height: 4em; 
 }
 
-
-#update{
-    color:#00703B;
-    font-size: 0.75em; 
-}
 
 .checkmark{
     max-width: 3em; 
@@ -95,7 +99,7 @@ button img{
 }
 strong.blood-type{
     font-weight: bold; 
-    font-size: 4em;
+    font-size: 3.5em;
 }
 
 .form-check-input{
